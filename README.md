@@ -49,3 +49,23 @@ This viewer uses **PDF.js** (by Mozilla) via CDN. Ensure you have an active inte
     </script>
 </body>
 </html>
+```
+
+
+## 🔒 Security Disclaimer (Important)
+Please note that complete client-side security on the web is impossible.
+
+What this viewer does: It prevents casual users from easily right-clicking or dragging to download the PDF pages as images.
+
+What this viewer cannot block: Advanced users or developers can still inspect the browser's Network Tab (F12) to find the original PDF source URL or take screenshots.
+
+## 💡 Recommendation for Enhanced Security
+If you require ironclad security:
+
+Do not expose the direct URL of the PDF file. Serve the file through a backend authenticated stream.
+
+Consider converting PDF pages into images on the server side and loading them sequentially into this canvas viewer.
+
+## 📜 License
+This project is licensed under the MIT License.
+
